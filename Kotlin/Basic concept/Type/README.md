@@ -52,8 +52,15 @@ The rules are following:
 
       % : modulus
 
-      
-      
+#### Type of result after operation between two
+Iff both of dividend and divisor are not Float and Double type, the fraction of result will be discarded.
+i.e. Iff one of dividend and divisor are either Float or Double type, the fraction of result will NOT be discarded.
+
+For the table, see the docx file.
+
+https://github.com/40843245/Kotlin_Tutorial/tree/main/Kotlin/Basic%20concept/Type/docx
+
+
 #### Overloading
 Overloading of operator for numbers:
             
