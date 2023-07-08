@@ -62,3 +62,27 @@ Such as
 or equivalent said 
 
       9 downto 1 step 2
+
+## ..
+### intro
+The expression 
+
+    {start} .. {end}
+
+will create a list with open-ended upward approach (i.e.from {start} to {end} (inclusively) ) 
+
+With step (represented as identifier {step}) as default value -- 1.
+
+### Example
+#### Example 1
+    
+    3..9
+
+will create a list
+
+    [3,4,5,6,7,8,9]
+
+## ..<
+
+
+
