@@ -1,11 +1,25 @@
 # Type 
-## Decimal Number
+## Number 
+All available numbers in Kotlin:
+
+Integer:
+
+      decimal
+      hexdecimal
+      binary number
+
+Float:
+
+      float
+      double
+      
+### Decimal Number
 See my note in docx in Github. (for convenience to type formula)  
-## Conversion
+#### Conversion
 1. Explicit conversion : Supported for all types.
 2. Implicit conversion : Only supported for type of smaller number to bigger number, NOT supported for type pf bigger number to smaller number.
 
-### Explicit Conversion
+##### Explicit Conversion
 For objects whose type in decimal numbers, there are these methods to<type>.
 
       toByte : to Byte. Its syntax is toByte()
@@ -15,7 +29,7 @@ For objects whose type in decimal numbers, there are these methods to<type>.
       toFloat : to Float. Its syntax is toFloat()
       toDouble : to Double. Its syntax is toDouble()
 
-### Implicit Conversion
+##### Implicit Conversion
 Only supported for type of smaller number to bigger number, NOT supported for type pf bigger number to smaller number.
 
 The rules are following:
