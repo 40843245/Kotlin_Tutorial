@@ -38,5 +38,18 @@ The rules are following:
 
       2. If number x > Max Value of Int , it will be cast to Long.
 
+#### Overloading
+Overloading of operator for numbers:
+            
+            + 
+            - 
+            / 
+            * 
+            %
+            
+Example of overloading of operator:
+
+      val l = 1L + 3 // Long + Int => Long
+
    
 
