@@ -1,4 +1,4 @@
-# Type 
+# Type and Operation
 ## Number 
 All available numbers in Kotlin:
 
@@ -77,7 +77,11 @@ Example of overloading of operator:
 
       shl : signed shift left.
       shr : signed shift right.
-      ushr: unsigned shift right.
+      ushr : unsigned shift right.
+      and : bitwise and
+      or : bitwise or
+      xor : bitwise xor
+      inv : bitwise inversion (i.e. bitwise not)
 
 #### signed left shift 
 I want to call left shift as zero-fill left shift.
@@ -85,7 +89,6 @@ I want to call left shift as zero-fill left shift.
 The excess bit(s) from the left (before shiftness) will be discarded after shiftness.
 
 It will fill 0 from right when shiftness.
-
 
 ##### Ref
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift
@@ -114,6 +117,9 @@ Thus, for unsigned number, the result of unsigned right shift will >= 0 .
 
 ##### Ref
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift
+
+#### bitwise not
+For each bit, 0 will be negated to 1 while 1 will be negated to 0.
 
 ### NOTICE
 1. There does NOT exist ushl (unsigned shift left), for the reseason why, simply think about what is unsigned shift right.
