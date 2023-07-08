@@ -83,6 +83,29 @@ will create a list
     [3,4,5,6,7,8,9]
 
 ## ..<
+### intro
+The expression 
 
+    {start} ..< {end}
 
+will create a list with close-ended upward approach (i.e.from {start} to {end} (exclusively) ) 
+
+With step (represented as identifier {step}) as default value -- 1.
+
+### Example
+#### Example 1
+    
+    3..<9
+
+will create a list
+
+    [3,4,5,6,7,8]
+
+## step
+### intro 
+The keyword step can set the step.
+
+## downto
+### intro
+The keyword downto indicates to ount downward. It is commonly used when {end} < {start}.
 
