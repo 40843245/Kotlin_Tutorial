@@ -38,6 +38,22 @@ The rules are following:
 
       2. If number x > Max Value of Int , it will be cast to Long.
 
+### Operator
+
+      + : plus
+
+      - : minus
+
+      * : multiplication
+
+      / : division
+
+            For x / y, when x and y are both Int, it will return Int
+
+      % : modulus
+
+      
+      
 #### Overloading
 Overloading of operator for numbers:
             
