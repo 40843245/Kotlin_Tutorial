@@ -36,8 +36,15 @@ One ** DON'T ** have to install the compiler.
 For more detailed information, visit Kotlin Docs at
 
 + https://kotlinlang.org/docs/getting-started.html
-
 + https://kotlinlang.org/docs/command-line.html
 
+## Execute .kt file
+### Way 1: With kotlin compiler in terminal
+To execute test1.kt file, in terminal, type these command
 
-One can also 
+      kotlinc test1.kt
+
+For more detail about how to compiling kotlin program, visit kotlin docs.
+
+https://kotlinlang.org/docs/command-line.html#create-and-run-an-application
+
