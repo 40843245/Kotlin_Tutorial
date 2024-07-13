@@ -23,9 +23,15 @@ If one wants to create the Message object. One can either directly instantiate i
 
     val message = org.example.Message
 
-or import org.example package and then instantiate it
+or import the Message class of org.example package and then instantiate it
 
-    import org.example
+    import org.example.Message 
+    // ...
+    val message = Message
+
+or import all functions and classes of org.example package (since importing all functions and classes also imports the Message class, of course) and then instantiate it
+
+    import org.example.*
     // ...
     val message = Message
 
