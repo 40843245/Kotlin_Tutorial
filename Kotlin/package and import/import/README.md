@@ -6,7 +6,14 @@ You can see my notes at Github.
 
 https://github.com/40843245/Kotlin_Tutorial/tree/main/Kotlin/package%20and%20import/package
 
-## Example
+## Import statement 
+To import a function or class etc from a package. One can use import statement as following.
+
+    import packagename.class1 
+
+For fully understand, see the following example.
+
+### Example
 
 Continue the example at the above note.
 
@@ -35,6 +42,11 @@ or import all functions and classes of org.example package (since importing all 
     // ...
     val message = Message
 
+## Import statement and alias it
+Contiune the above example, if one wants to import Message class and give alias it as TestMessage. Write the following.
+
+    import org.test.Message as TestMessage // TestMessage stands for 'org.test.Message'
+    
 ## Ref
 From Kotlin docs,
 
