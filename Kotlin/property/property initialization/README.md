@@ -19,10 +19,11 @@
 
 | item                | Lazy initialization | Late initialization |
 ----------------------| ------------------- | ------------------- |
-| keyword             | lazy                | lateinit            |
-| can declare variable with |                 | val                 | var                 |
-| example                    | val myLazyString: String by lazy { "Hello" }                    | lateinit var subject: TestSubject                    |
-| behaviour | `by lazy { ... }` defines the only initializer for the property | | 
+| keyword             | `lazy`                | `lateinit`            |
+| can declare variable with |                 | `val`                 | `var`                 |
+| example                    | `val myLazyString: String by lazy { "Hello" }`                    | `lateinit var subject: TestSubject`                    |
+| behaviour | `by lazy { ... }` defines the only initializer for the property | `lateinit var` can be initialized from anywhere the object is seen from, e.g. from inside a framework code |
+
 
 
 ## Ref
