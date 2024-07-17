@@ -21,7 +21,7 @@
 ----------------------| ------------------- | ------------------- |
 | keyword             | lazy                | lateinit            |
 | can declare variable with |                 | val                 | var                 |
-|                     |                     |                     |
+| example                    | val myLazyString: String by lazy { "Hello" }                    | lateinit var subject: TestSubject                    |
 
 
 ## Ref
