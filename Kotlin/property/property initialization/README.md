@@ -15,8 +15,14 @@
        @Test fun test() { subject.method() }
     }
 
-## Ref
+## Lazy initialization v.s. Late initialization
 
+| Lazy initialization | Late initialization |
+| ----------------------------------------- |
+|                                           |
+| ----------------------------------------- |
+
+## Ref
 Lazy initialization v.s. Late initialization
 
 https://stackoverflow.com/questions/36623177/property-initialization-using-by-lazy-vs-lateinit
