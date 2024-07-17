@@ -18,9 +18,9 @@
 ## Lazy initialization v.s. Late initialization
 
 | Lazy initialization | Late initialization |
-| ----------------------------------------- |
+| --------------------| ------------------- |
 |                     |                     |
-| ----------------------------------------- |
+| ------------------- | ------------------- |
 
 ## Ref
 Lazy initialization v.s. Late initialization
