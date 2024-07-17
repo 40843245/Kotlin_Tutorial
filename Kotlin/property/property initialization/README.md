@@ -19,7 +19,7 @@
 
 | Lazy initialization | Late initialization |
 | ------------------- | ------------------- |
-|                     |                     |
+| lazy                |  lateinit           |
 | ------------------- | ------------------- |
 |                     |                     |
 
