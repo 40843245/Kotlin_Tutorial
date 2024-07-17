@@ -17,11 +17,12 @@
 
 ## Lazy initialization v.s. Late initialization
 
-| Lazy initialization | Late initialization |
-| ------------------- | ------------------- |
-| lazy                |  lateinit           |
-| ------------------- | ------------------- |
-|                     |                     |
+| item                | Lazy initialization | Late initialization |
+----------------------| ------------------- | ------------------- |
+| lazy                |  lateinit           |                     |
+| val                 |  var                |                     |
+|                     |                     |                     |
+
 
 ## Ref
 Lazy initialization v.s. Late initialization
