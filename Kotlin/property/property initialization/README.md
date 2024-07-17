@@ -19,8 +19,8 @@
 
 | item                | Lazy initialization | Late initialization |
 ----------------------| ------------------- | ------------------- |
-| lazy                |  lateinit           |                     |
-| val                 |  var                |                     |
+| keyword             | lazy                | lateinit            |
+| can declare variable with |                 | val                 | var                 |
 |                     |                     |                     |
 
 
