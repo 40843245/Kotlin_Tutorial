@@ -23,7 +23,7 @@
 | can declare variable with |                 | `val`                 | `var`                 |
 | example                    | `val myLazyString: String by lazy { "Hello" }`                    | `lateinit var subject: TestSubject`                    |
 | behaviour | `by lazy { ... }` defines the only initializer for the property | `lateinit var` can be initialized from anywhere the object is seen from, e.g. from inside a framework code |
-| can be altered at | It can be initializes in any initialization scenarios in class (i.e. anywhere within `init {}` | It can only be altered by overriding the property in a subclass
+| altered scenario | It can be initializes in any initialization scenarios in class (i.e. anywhere within `init {}` | It can only be altered by overriding the property in a subclass
 | backing field | `by lazy { ... }` does **NOT** have backing field, the value is stored once it is calculated. | `lateinit var` has a backing field which stores the value
 
 
