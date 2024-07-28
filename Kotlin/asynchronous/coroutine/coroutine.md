@@ -1,4 +1,6 @@
 # Coroutine in Kotlin
+## Example 
+### Example 1
 
 ```
 // 1. this call starts a new coroutine (let's call it C1).
@@ -41,6 +43,22 @@ fun computation(): Deferred<Boolean> {
     }
 }
 ```
+
+#### explanation
+
+The outer async starts a coroutine. When it calls computation(), the inner async starts a second coroutine. Then, the call to await() suspends the execution of the outer async coroutine, until the execution of the inner async's coroutine is over.
+
+You can even see that with a single thread: the thread will execute the outer async's beginning, then call computation() and reach the inner async. At this point, the body of the inner async is skipped, and the thread continues executing the outer async until it reaches await(). await() is a "suspension point", because await is a suspending function. This means that the outer coroutine is suspended, and thus the thread starts executing the inner one. When it is done, it comes back to execute the end of the outer async.
+
+
+## Q&A
+### Q1:
+Does suspend mean that while outer async coroutine is waiting (await) for the inner computation coroutine to finish, it (the outer async coroutine) idles (hence the name suspend) and returns thread to the thread pool, and when the child computation coroutine finishes, it (the outer async coroutine) wakes up, takes another thread from the pool and continues?
+
+### A1:
+Yes, precisely.
+
+The way this is actually achieved is by turning every suspending function into a state machine, where each "state" corresponds to a suspension point inside this suspend function. Under the hood, the function can be called multiple times, with the information about which suspension point it should start executing from (you should really watch the video I linked for more info about that).
 
 ## Ref
 [what does the suspend function mean in kotlin coroutine](https://stackoverflow.com/questions/47871868/what-does-the-suspend-function-mean-in-a-kotlin-coroutine)
