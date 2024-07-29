@@ -100,5 +100,33 @@ Reactive Extensions (Rx) were introduced to C# by Erik Meijer. While it was defi
 
 > [!NOTE]
 > Rx is simply the Observer Pattern with a series of extensions which allow us to operate on the data.
+
+## [Coroutines](https://kotlinlang.org/docs/async-programming.html#coroutines)
+### Example 
+
+```
+fun postItem(item: Item) {
+    launch {
+        val token = preparePost()
+        val post = submitPost(token, item)
+        processPost(post)
+    }
+}
+
+suspend fun preparePost(): Token {
+    // makes a request and suspends the coroutine
+    return suspendCoroutine { /* ... */ }
+}
+```
+
+### Pros
++ The programming model in itself doesn't really change.
+
++ The code is still written as if we were writing synchronous code, top-down, without the need of any special syntax, beyond the use of a function called launch which essentially kicks off the coroutine (covered in other tutorials).
+
++ The programming model and APIs remain the same.
+
++ Platform independent.
 ## Ref
 [Asynchronous programming techniques (official docs)](https://kotlinlang.org/docs/async-programming.html)
+
