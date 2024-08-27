@@ -3,7 +3,7 @@
 In this repo, I will place all tutorials and notes about programming language Kotlin.
 
 ## README
-See [README.md](https://github.com/40843245/<repoNameEncode>/blob/main/README.md)
+See [README.md](https://github.com/40843245/Kotlin_Tutorial/blob/main/README.md)
 
 ## quickstart guide
 See [quickstart guide.md](https://github.com/40843245/Kotlin_Tutorial/blob/main/Kotlin/quickstart%20guide.md)
