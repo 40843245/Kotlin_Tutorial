@@ -27,6 +27,12 @@ The special characters in re includes
 
 ### all definitions
 ```
+# About nothing
+<nop> := () # nothing
+
+# About null
+<null> := null
+
 # For alphabet
 {uppercase} := [A-Z]
 {lowercase} := [a-z]
@@ -72,6 +78,17 @@ The special characters in re includes
 # Mixture of symbols
 {rightArrow} := {equalSign}{greaterThanSign} # `=>`
 {memberOfPointer} := {dash}{greaterThanSign} # `->`
+
+# Special operator in Kotlin
+## About null safety check
+### nullable check operator
+{nullableCheck} := {questionSign}{dot} # `?.`
+
+### Elvis Operator
+{ElvisOperator} := {questionSign}{semicolon} # `?:`
+
+### non-null assertion operator
+{nonNullAssertionOperator} := {exclamationSign}{exclamationSign} # `!!`
 
 # For space
 {whitespace} := # a whitespace  ` `
@@ -120,9 +137,13 @@ The special characters in re includes
 {assigment} := {equalSign} # `=`
 
 # For comparisons
-## For comparisons of two numbers and two booleans
-{eq} := {equalSign}{equalSign} # equal to 
-{ne} := {exclamationSign}{equalSign} # not equal to
+## For comparisons of two numbers, two booleans, two chars, and two string etc.
+{eq} := {equalSign}{equalSign} # `==` equal to 
+{ne} := {exclamationSign}{equalSign} # `!=` not equal to
+
+## For referiential equality
+{referientialEqual} := {equalSign}{equalSign}{equalSign} # `===` referiential equal
+{nonReferientialEqual} := {exclamationSign}{equalSign}{equalSign} # `!==` opposite of `===`
 
 ## For comparisons of two numbers
 {lt} := {lessThanSign} # less than
@@ -130,46 +151,18 @@ The special characters in re includes
 {le} := {lessThanSign}{equalSign} # less than or equal to
 {ge} := {greaterThanSign}{equalSign} # greater than or equal to
 
-## For other comparisons of two numbers
-{numbercmp} := {lessThanSign}{equalSign}{greaterThanSign} # The operator `<=>`acts strcmp in C. For two numbers `x` and `y`, it will return ` iff `x>y`. It will return 0 iff `x==y`. It will return -1 iff `x<y`.
-
-{numberComparisonOperator} := ({eq}|{ne}|{lt}|{gt}|{le}|{ge}|{numbercmp})
-
-## For comparisons of two strings.
-{eqString} := eq
-{neString} := ne
-{ltString} := lt
-{gtString} := gt
-{leString} := le
-{geString} := ge
-
-{stringComparisonOperator} := ({eqString}|{neString}|{ltString}|{gtString}|{leString}|{geString})
-
 # For variable without prefix
 {variableName} := {identifier}
 {variable} := {vaariableName}
 
 # For keyword
-{keyword} := see the keywords in Perl.
+{keyword} := see the keywords in Kotlin.
+
+# For modifier
+{keyword} := see the modifier in Kotlin.
 
 # For identifier
 {identifier} := {alphabet}({alphabet}|{digit}|{underscore})*
-
-# For variable with prefix
-## About basic data type
-{basicTypeVariable} := {dollarSign}{variable}
-
-## About array type
-{arrayTypeVariable} := {atSign}{variable}
-
-## About list type
-{listTypeVariable} := {atSign}{variable}
-
-## About hash type
-{hashTypeVariable} := {modulus}{variable} # for example, `%hash1`
-
-## About prefix of a variable
-{variableWithPefix} := ({basicTypeVariable}|{arrayTypeVariable}|{listTypeVariable}|{hashTypeVariable})
 
 # For operator
 ## About numbers
@@ -231,7 +224,7 @@ The special characters in re includes
 
 # For value
 ## For left value
-<lvalue> := {variableWithPrefix}
+<lvalue> := {identifier}
 
 ## For right value
 <rvalue> := {complicatedExpression} # Definition of {complicatedExpression}, see above.
@@ -250,6 +243,7 @@ The special characters in re includes
 
 # For body
 <body> := <statements>
+<mainBody> := {body}
 
 # For block
 <block> := {leftCurlyBracket}{body}{rightCurlyBracket}
@@ -266,9 +260,9 @@ The special characters in re includes
 
 <propertyNameOrMethodName> := ({methodName}|{propertyName})
 
-## About the class variable name in class definition
-<classVar> := {basicTypeVariable} # i.e. `$` followed by the class variable name.
-<reference> := {leftCurlyBracket}{spaceOptional}{pairs}{spaceOptional}{rightCurlyBracket}
-<objectName> := {identifier}
+## About class modifiers
+<classModifiers> := ( ( ("open")?{space}+("data")? ) | (<nop>) )
 
+## About class definition
+{classDefinition} := {classModifiers} class {className}{space}+("")
 ```
