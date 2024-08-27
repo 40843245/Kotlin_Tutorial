@@ -14,6 +14,27 @@
 > }
 > ```
 
+For example, see `CH1 - print in console` in my example code[^1].
+
+### logical operator
+| symbol | x | y | expression | returned result |
+| :- | :- | :- | :- | :- |
+| `&&` | `true` | `true` | `x && y` | `true` | 
+| `&&` | `false` | `true` | `x && y` | `false` | 
+| `&&` | `true` | `false` | `x && y` | `false` | 
+| `&&` | `false` | `false` | `x && y` | `false` | 
+
+| symbol | x | y | expression | returned result |
+| :- | :- | :- | :- | :- |
+| `\|\|` | `true` | `true` | `x \|\| y` | `true` | 
+| `\|\|` | `false` | `true` | `x \|\| y` | `true` | 
+| `\|\|` | `true` | `false` | `x \|\| y` | `true` | 
+| `\|\|` | `false` | `false` | `x \|\| y` | `false` | 
+
+
+
+For example, see `CH6 - logical operator` in my example code[^1].
+
 ### conditional statement
 #### if 
 
