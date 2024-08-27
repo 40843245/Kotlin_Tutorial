@@ -359,9 +359,12 @@ Regex[^2][^3][^4] in Kotlin is a class that handles string with re (regular expr
 > [!TIP]
 > The rule of re in Kotlin is quite similar to those in all languages.
 
-```
+> [!TIP]
+> Here, I recommend a useful tool to handle text with re. regexr.com[^3].
+>
+> For more introduction about regexr.com[^3], see my notes at Github[^5].
 
-```
+
 #### footnote
 
 [^1]: [Example code zip file](https://github.com/40843245/Kotlin_Tutorial/blob/main/Kotlin/example%20code/example%20code%20in%20Kotlin.7z)
@@ -371,3 +374,5 @@ Regex[^2][^3][^4] in Kotlin is a class that handles string with re (regular expr
 [^3]: [a website of an regular expression](https://regexr.com/)
 
 [^4]: [Regex (Kotlin API docs)](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/)
+
+[^5]: [regexr (my notes at Github)](https://github.com/40843245/tool/blob/main/Data%20Processing/Text%20Processing/regular%20expression/regexr.com.md)
