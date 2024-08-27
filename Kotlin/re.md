@@ -258,6 +258,14 @@ The special characters in re includes
 ## About class name.
 <className> := {identifier}
 
+## About method
+<methodName> := {identifier}
+
+## About property
+<propertyName> := {identifier}
+
+<propertyNameOrMethodName> := ({methodName}|{propertyName})
+
 ## About the class variable name in class definition
 <classVar> := {basicTypeVariable} # i.e. `$` followed by the class variable name.
 <reference> := {leftCurlyBracket}{spaceOptional}{pairs}{spaceOptional}{rightCurlyBracket}
