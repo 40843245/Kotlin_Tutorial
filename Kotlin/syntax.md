@@ -17,6 +17,18 @@
 For example, see `CH1 - print in console` in my example code[^1].
 
 ### logical operator
+
+| symbol | keyword | description |
+| :- | :- | :- |
+| `&&` | `and` | returns `true` iff all elements are evaluated to `true`. |
+| `\|\|` | `or` | returns `true` iff one of elements is evaluated to `true`. |
+| `!` | `not` | returns `true` iff the only one element is `false`. `false` to `true`. `true` to `false` |
+
+| symbol | x | expression | returned result |
+| :- | :- | :- | :- |
+| `!` | `true` | `!x` | `false` | 
+| `!` | `false` | `!x` | `true` | 
+
 | symbol | x | y | expression | returned result |
 | :- | :- | :- | :- | :- |
 | `&&` | `true` | `true` | `x && y` | `true` | 
