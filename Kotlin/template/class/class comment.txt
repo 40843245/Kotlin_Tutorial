@@ -1,0 +1,14 @@
+/*
+  class name: <className>
+  class intro: <classIntro>
+
+  expected number of property in package: <propertiesInclassLength>
+  expected properties in package: 
+    1. <property1Name>
+    2. <property2Name>
+
+  expected number of method in package: <methodsInclassLength>
+  expected methods in package: 
+    1. <method1Name>
+    2. <method2Name>
+*/
