@@ -3,7 +3,7 @@
 ### entry point
 
 > [!CAUTION]
-> In kotlin, each `.kt` must have an entry point.
+> In kotlin, each `.kt` must have exactly one entry point. Otherwise, one will get compiler error.
 
 > [!CAUTION]
 > In kotlin, an entry point is a `main` function.
@@ -15,6 +15,114 @@
 > ```
 
 ### conditional statement
+#### if 
+
++ The first form also the basic form as follows.
+
+Iff the condition in `if` -- `<condition1>` is true, the expressions in `if` block -- `<expressions1>` will be evaluated.
+
+```
+if(<condition>){
+  <expressions1>
+}
+```
+
++ The second form as follows.
+
+Similar to first form.
+
+Iff the condition in `if` -- `<condition1>` is true, the expressions in `if` block -- `<expressions1>` will be evaluated.
+
+Otherwise, the expressions in `else` block -- `<expressions2>` will be evaluated.
+
+```
+if(<condition1>){
+  <expressions1>
+}else{
+  <expressions2>
+}
+```
+
++ The third form as follows.
+
+Similar to second form. 
+
+> [!TIP]
+> One can think it contains another `if-else` statement in first `else`block.
+
+Iff the condition in `if` -- `<condition1>` is true, the expressions in `if` block -- `<expressions1>` will be evaluated.
+
+Otherwise, iff the condition in `else if` -- `<condition2>` is true, the expressions in `else if` block -- `<expressions2>` will be evaluated.
+
+Otherwise, the expressions in `else` block -- `<expressions3>` will be evaluated.
+
+```
+if(<condition1>){
+  <expressions1>
+}else if(<condition2>){
+  <expressions2>
+}else{
+  <expressions3>
+}
+```
+
+We can expand it to more `else if ` on `if` statement.
+
+> [!IMPORTANT]
+> In Kotlin, all blocks has only one expression, then the expression will be evaluated value then ***returned***. See fourth form and fifth form.
+
++ The fourth form as follows.
+
+If `<condition1>` is evaluated to true, then the only one expression `<expression1>` will be evaluated and ***returned***.
+
+Otherwise, the only one expression `<expression2>` will be evaluated and ***returned***.
+
+```
+<variableName> = if(<condition1>) <expression1> else <expression2>
+```
+
+or equivalently
+
+```
+<variableName> = if(<condition1>) {
+  <expression1>
+}else{
+  <expression2>
+}
+```
+
++ The fifth form as follows.
+
+If `<condition1>` is evaluated to true, then the only one expression `<expression1>` will be evaluated and ***returned***.
+
+Otherwise, if `<condition2>` is evaluated to true, the only one expression `<expression2>` will be evaluated and ***returned***.
+
+Otherwise, the only one expression `<expression3>` will be evaluated and ***returned***.
+
+```
+<variableName> = if(<condition>) <expression1> else if (<condition2>) <expression2> else <expression3>
+```
+
+or equivalently
+
+```
+<variableName> = if(<condition1>) {
+  <expression1>
+} else if (<condition2>) {
+  <expression2>
+}else {
+  <expression3>
+}
+```
+
+We can expand it to more `else if ` on `if` statement.
+
+> [!CAUTION]
+> If the `if` statement is used to return value, then all pathes among these block must return same type.
+>
+> Thus, the `else` and its block can ***NOT*** be omitted.
+
+For example, see `CH7 - conditional statement` in my example code[^1].
 
 ### loop
 #### for
