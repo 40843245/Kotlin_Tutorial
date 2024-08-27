@@ -364,10 +364,10 @@ Regex[^2][^3][^4] in Kotlin is a class that handles string with re (regular expr
 ```
 #### footnote
 
-[^1] [Example code zip file](https://github.com/40843245/Kotlin_Tutorial/blob/main/Kotlin/example%20code/example%20code%20in%20Kotlin.7z)
+[^1]: [Example code zip file](https://github.com/40843245/Kotlin_Tutorial/blob/main/Kotlin/example%20code/example%20code%20in%20Kotlin.7z)
 
-[^2] [Regex (Kotlin in TibMe)](https://kuroclass.gitbook.io/kotlin/v/ch9#matches)
+[^2]: [Regex (Kotlin in TibMe)](https://kuroclass.gitbook.io/kotlin/v/ch9#matches)
 
-[^3] [a website of an regular expression](https://regexr.com/)
+[^3]: [a website of an regular expression](https://regexr.com/)
 
-[^4] [Regex (Kotlin API docs)](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/)
+[^4]: [Regex (Kotlin API docs)](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/)
