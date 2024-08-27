@@ -1,0 +1,12 @@
+/*
+  method name: <methodName>
+  method intro: <methodIntro>
+  expected method paras length: <methodParasLength>
+  expected method paras:
+    1. <methodPara1Name>: It should be a(n) <methodPara1Type>. <methodPara1Intro>
+    2. <methodPara2Name>: It should be a(n) <methodPara2Type>. <methodPara2Intro>
+  expected returned value length: <methodReturnedValueLength>
+  expected returned value:
+    1. <methodReturnedValue1Name>: It should be a(n) <methodReturnedValue1Type>. <methodReturnedValue1Intro>
+    2. <methodReturnedValue2Name>: It should be a(n) <methodReturnedValue2Type>. <methodReturnedValue2Intro>
+*/
