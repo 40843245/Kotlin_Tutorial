@@ -1,0 +1,12 @@
+/*
+  method name: <methodName>
+  method intro: <methodIntro>
+  expected method paras length: <methodParasLength>
+  expected method paras:
+    1. <methodPara1Name>: It should be <methodPara1Type> type. <methodPara1Intro>
+    2. <methodPara2Name>: It should be <methodPara2Type> type. <methodPara2Intro>
+  expected returned value length: <methodReturnedValueLength>
+  expected returned value:
+    1. <methodReturnedValue1Name>: It should be <methodReturnedValue1Type> type. <methodReturnedValue1Intro>
+    2. <methodReturnedValue2Name>: It should be <methodReturnedValue2Type> type. <methodReturnedValue2Intro>
+*/
