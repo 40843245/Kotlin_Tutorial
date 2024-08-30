@@ -307,8 +307,121 @@ It can be also used with `step`. The number after `step` keyword refers the numb
 | `3` | `10` | `2` | `3 ..< 10 step 2` or `3 until 10 step 2` | `(3,5,7,9)` | 
 | `3` | `10` | `-2` | `10 downTo 3 step -2` | `(10,8,6,4)` | 
 
-
 For example, see `CH9 - range` in my example code[^1].
+
+### data type
+#### List type
+It is often used when the order of elem is important.
+
+##### `List`
+
+> [!IMPORTANT]
+> It is ***NOT*** mutable. That is, the element in `List` can NOT be changed.
+
+###### construct
+To construct a `List` with any elements (zero to any integer number of elements), one can use these methods
+  + `listOf` (such as `listOf(1,2,3)`)
+
+To construct `List` with zero element, use these methods.
+  + `listOf` (through `listOf()`)
+  + `emptyOf` (through `emptyOf()`)
+
+###### API reference
+For more details about `List`, see [`List` (Kotlin official docs)](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list.html)
+
+##### `MutableList`
+
+> [!IMPORTANT]
+> It is mutable. That is, the element in `MutableList` can be changed.
+
+###### construct
+To construct `MutableList` with any element, use these methods.
+  + `mutableListOf` (through `mutableListOf(1,2,3)`)
+
+To construct `MutableList` with zero element, use these methods.
+  + `mutableListOf` (through `mutableListOf()`)
+
+> [!IMPORTANT]
+> `MutableList` is a subclass of `List`.
+
+###### API reference
+For more details about `MutableList`, see [`MutableList` (Kotlin official docs)](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list.html)
+
+#### Map type
+To use the feature key-value pair, one can use Map.
+
+##### `Map`
+
+> [!IMPORTANT]
+> It is ***NOT*** mutable. That is, the element in `Map` can NOT be changed.
+
+###### construct
+To construct `Map` with any element, use these methods.
+  + `mapOf` (such as `mapOf( 'A' to 65 , 'B' to 66)`)
+
+To construct `Map` with zero element, use these methods.
+  + `mapOf` (through `mapOf()`)
+  + `emptyMap()` (through `emptyMap()`)
+
+###### API reference
+For more details about `Map`, see [`Map` (Kotlin official docs)](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/)
+
+##### `MutableMap`
+
+> [!IMPORTANT]
+> It is mutable. That is, the element in `MutableMap` can be changed.
+
+###### construct
+To construct `MutableMap` with any element, use these methods.
+  + `mutableMapOf` (such as `mapOf( 'A' to 65 , 'B' to 66)`)
+
+To construct `MutableMap` with zero element, use these methods.
+  + `mutableMapOf` (through `mutableMapOf()`)
+
+> [!IMPORTANT]
+> `MutableMap` is a subclass of `Map`.
+
+###### API reference
+For more details about `MutableMap`, see [`MutableMap` (Kotlin official docs)](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/#kotlin.collections.MutableMap)
+
+#### Set type
+In math, there are unique value in a Set. And so in Kotlin.
+
+If one think the uniqueness is important, use set Type.
+
+##### `Set`
+
+> [!IMPORTANT]
+> It is ***NOT*** mutable. That is, the element in `Set` can NOT be changed.
+
+###### construct
+To construct `Set` with any element, use these methods.
+  + `setOf` (such as `setOf( 'A','B')`)
+
+To construct `Set` with zero element, use these methods.
+  + `setOf` (through `setOf()`)
+  + `emptySet` (through `emptySet()`)
+
+###### API reference
+For more details about `Set`, see [`Set` (Kotlin official docs)](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/)
+
+##### `MutableSet`
+
+> [!IMPORTANT]
+> It is mutable. That is, the element in `MutableSet` can be changed.
+
+###### construct
+To construct `MutableSet` with any element, use these methods.
+  + `mutableSetOf` (such as `mutableSetOf( 'A','B')`)
+
+To construct `MutableSet` with zero element, use these methods.
+  + `mutableSetOf` (through `mutableSetOf()`)
+
+> [!IMPORTANT]
+> `MutableSet` is a subclass of `Set`.
+
+###### API reference
+For more details about `MutableSet`, see [`MutableSet` (Kotlin official docs)](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/)
 
 ### null safety check
 #### nullable check ?.
