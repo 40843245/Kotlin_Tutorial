@@ -445,6 +445,61 @@ For example, see `nullable check` in my example code[^1].
 > [!CAUTION]
 > It is NOT allowed to add space between these symbols.
 
+### operation for List type
+
+Common operations of List type
+
+| operation for List type | inplace function | non-inplace function |
+| :- | :- | :- |
+| sort by ascending | `sort()` | `sorted()` |
+| sort by descending | `sortDescending()` | `sortedDescending()` |
+| reverse | `reverse()` | `reversed()`| 
+
+> [!IMPORTANT]
+> ***reverse v.s. reversed v.s. asReversed***
+>
+> `reverse` is an inplaced function, it will reverse the elements in the original object.
+>
+> `reversed` is a non-inplaced function, it will reverse the elements BUT return a new object. The original object does NOT be affected.
+>
+> `asReversed` is  non-inplaced function, it will return a reversed read-only view of the original object, thus all changes made in the original object will be reflected in the reversed one.
+
+#### operation for `Collections`
+
+> [!IMPORTANT]
+> `List`, `Map`, `Set` are subclass of `Collections`
+> 
+| property | description |
+| :- | :- |
+| `size` | get the number of elements. | 
+
+| methods | description |
+| :- | :- |
+| `count` | return the number of elements of orignal collection that satisfies the given predicate. If the predicate is NOT given, then default predicate is {`true`} which will return the number of elements in the original collection. | 
+
+| methods | description |
+| :- | :- |
+| `contains` | return true iff the original collection contains the given element. | 
+| `containsAll` | return true iff the original collection contains the given collection. |
+
+| methods | description |
+| :- | :- |
+| `add` | add one element | 
+| `addAll` | add one list into original collection. |
+
+| methods | description |
+| :- | :- |
+| `remove` | remove the given element | 
+| `removeAt` |  remove a corresponding element with given index |
+
+| methods | description |
+| :- | :- |
+| `retainAll` | only retain the new collection | 
+
+| methods | description |
+| :- | :- |
+| `clear` | clear the original collection | 
+
 #### Elvis operator ?:
 
 If the left hand of `Elvis operator` (`?:` symbol) `<leftValue>` is NOT `null`, then it will return the value `<leftValue>`.
