@@ -397,6 +397,16 @@ Regex[^2][^3][^4] in Kotlin is a class that handles string with re (regular expr
 >
 > For more introduction about regexr.com[^3], see my notes at Github[^5].
 
+### scope function
+
+| Function | Object reference | Return value| Is extension function|
+| :-- | :-- | :-- | :-- |
+| [`let`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/let.html)| `it`| Lambda result| Yes |
+| [`run`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/run.html) | `this`| Lambda result | Yes|
+| [`run`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/run.html)|  \- | Lambda result | No: called without the context object|
+| [`with`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/with.html)|`this`| Lambda result|No: takes the context object as an argument.|
+| [`apply`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/apply.html)| `this`| Context object| Yes|
+| [`also`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/also.html)| `it`| Context object|Yes|
 
 #### footnote
 
